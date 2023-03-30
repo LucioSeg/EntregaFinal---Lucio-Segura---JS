@@ -1,0 +1,164 @@
+.body {
+    margin: 0px;
+}
+/*<::::::NavBar::::::>*/
+.Nav-Bar {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: #0c8018;
+}
+.logo {
+    justify-self: start;
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+.verCarrito {
+    font-size: 25px;
+    margin-right: 50px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+.verCarrito img {
+    width: 80px;
+    height: 80px;
+}
+/*<::::::BANNER::::::>*/
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-image: url("fondo2.png");
+}
+.bannerContainer {
+    text-align: center;
+    padding: 15% 0;
+}
+.banner h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+/*<::::::JS::::::>*/
+.carroHtml {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.carta img {
+    width: 250px;
+    height: 200px;
+}
+.carta {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial;
+}
+.carta button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #0c8018;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.carta button:hover {
+    opacity: 0.7;
+}
+
+.precio {
+    color: grey;
+    font-size: 22px;
+}
+/*<::::::CARRITO::::::>*/
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: white;
+    background-color: #207028;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #065e0f;
+    color: white;
+    width: 100%;
+}
+.modalHeaderTitle {
+    justify-self: start;
+}
+.modal-header-button {
+    cursor: pointer;
+}
+.modal-container > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+.modal-container > div > img {
+    height: 120px;
+    width: 120px;
+}
+.total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.delete-product {
+    cursor: pointer;
+}
+.cantidad-carrito {
+    background-color: #08500f;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 50px;
+    position: absolute;
+    display: none;
+}
+.sumar {
+    cursor: pointer;
+}
+.restar {
+    cursor: pointer;
+}
